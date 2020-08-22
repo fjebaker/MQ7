@@ -27,12 +27,15 @@ The reference resistance is defined by the constraint
 
 ![](https://github.com/Dustpancake/MQ7/blob/master/equations/constraint1.gif)
 
+
 Using this point, and `PPM(0.4) ~ 400`, one can calculate the coefficients of fit with
 
 ![](https://github.com/Dustpancake/MQ7/blob/master/equations/eq2.gif)
 
 ![](https://github.com/Dustpancake/MQ7/blob/master/equations/eq3.gif)
-Using just two points from the plot, I calculated
+ 
+
+or
 
 ![](https://github.com/Dustpancake/MQ7/blob/master/equations/val1.gif)
 
