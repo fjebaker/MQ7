@@ -1,0 +1,8 @@
+MQ7         KEYWORD1
+readPpm     KEYWORD2
+readRs      KEYWORD2
+readRsRL    KEYWORD2
+calibrate   KEYWORD2
+getR0       KEYWORD2
+
+CALIBRATION_SECONDS     PREPROCESSOR

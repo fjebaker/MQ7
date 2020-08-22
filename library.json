@@ -1,0 +1,39 @@
+"name": "MQ7Sensor",
+"version": "1.0.0",
+"repository": {
+	"type": "git",
+	"url" : "https://github.com/Dustpancake/MQ7"
+},
+"description": "Library for interacting with the MQ7 carbon monodixe gas detector.",
+"keywords": [
+	"mq7",
+	"sensors"
+],
+"authors":
+{
+    "name": "Dustpancake",
+    "email": "fergusb.temp@gmail.com",
+    "url": "https://github.com/Dustpancake",
+    "maintainer": true
+},
+"homepage": "https://github.com/Dustpancake/MQ7",
+"export": {
+	"include": [
+		"src/*.cpp",
+		"src/*.h",
+		"examples/*"
+		]
+},
+"frameworks": "Arduino",
+"platforms": "*",
+"examples": [
+	{
+		"name": "MQ7",
+		"base": "examples/MQ7_Example",
+		"files": [
+			"examples/MQ7_Example.ino",
+			"src/MQ7.cpp",
+			"src/MQ7.h"
+		]
+	}
+]

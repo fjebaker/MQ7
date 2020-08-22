@@ -1,4 +1,6 @@
-/*
+/*	
+	MQ7_Example.ino
+
 	Example sketch for MQ7 carbon monoxide detector.
 		- connect analog input 
 		- set A_PIN to the relevant pin
@@ -7,6 +9,7 @@
 
 	Created by Fergus Baker
 	22 August 2020
+	Released into the public domain.
 */
 
 
