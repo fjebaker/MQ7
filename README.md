@@ -19,24 +19,24 @@ Upload the sketch, and then monitor serial. The example sketch will calibrate th
 ## Detailed guide
 In the MQ7 Data sheet is provided the typical behaviour of the device. The carbon monoxide ppm is a function of the surface resistance divided by a reference resistance, following the general exponential equation 
 
-- [](https://github.com/Dustpancake/MQ7/blob/master/equations/eq1.gif)
+![](https://github.com/Dustpancake/MQ7/blob/master/equations/eq1.gif)
 
 **NB:** the plot in the data sheet has reversed axes.
 
 The reference resistance is defined by the constraint
 
-- [](https://github.com/Dustpancake/MQ7/blob/master/equations/constraint.gif)
+![](https://github.com/Dustpancake/MQ7/blob/master/equations/constraint1.gif)
 
 Using this point, and `PPM(0.4) ~ 400`, one can calculate the coefficients of fit with
 
-- [](https://github.com/Dustpancake/MQ7/blob/master/equations/eq2.gif)
+![](https://github.com/Dustpancake/MQ7/blob/master/equations/eq2.gif)
 
-- [](https://github.com/Dustpancake/MQ7/blob/master/equations/eq3.gif)
+![](https://github.com/Dustpancake/MQ7/blob/master/equations/eq3.gif)
 Using just two points from the plot, I calculated
 
-- [](https://github.com/Dustpancake/MQ7/blob/master/equations/val1.gif)
+![](https://github.com/Dustpancake/MQ7/blob/master/equations/val1.gif)
 
-- [](https://github.com/Dustpancake/MQ7/blob/master/equations/val2.gif)
+![](https://github.com/Dustpancake/MQ7/blob/master/equations/val2.gif)
 
 Which are defined in `MQ7.h`. The library then calibrates `R0` by continuously recalculating the value every seconds for `CALIBRATION_SECONDS` (TODO: until delta based condition met). As such, **this calibration function must be called in `setup()`** to avoid faulty data.
 
