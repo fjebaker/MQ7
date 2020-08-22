@@ -8,6 +8,8 @@
 #ifndef MQ7_H
 #define MQ7_H
 
+#include "Arduino.h"
+
 /*
 	CONFIGURATION OPTIONS 
 */

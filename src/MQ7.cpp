@@ -5,7 +5,7 @@
 	Released into the public domain.
 */
 
-#include "mq7.h"
+#include "MQ7.h"
 #include "Arduino.h"
 
 float MQ7::readPpm() {
