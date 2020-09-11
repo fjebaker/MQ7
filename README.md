@@ -41,7 +41,7 @@ or
 
 ![](https://github.com/Dustpancake/MQ7/blob/master/equations/val2.gif)
 
-Which are defined in `MQ7.h`. The library then calibrates `R0` by continuously recalculating the value every seconds for `CALIBRATION_SECONDS` (TODO: until delta based condition met). As such, **this calibration function must be called in `setup()`** to avoid faulty data.
+which are defined in `MQ7.h`. The library then calibrates `R0` by continuously recalculating the value every seconds for `CALIBRATION_SECONDS` (TODO: until delta based condition met). As such, **this calibration function must be called in `setup()`** to avoid faulty data.
 
 The `R0` is calculated by assuming clean air (approx 10 ppm of carbon monoxide) -- it is therefore best to perform this calibration outside. You can read in the value calculated for `R0` using the `getR0` function.
 
@@ -49,7 +49,7 @@ Alternatively, as the data sheet recommends, the device should be calibrated aft
 ```cpp
 #define _R0 0.025	
 ```
-and put in your `R0` value. Doing this will override the `calibration()` method to do nothing, so there would be no need to call it under these conditions.
+and put in your `R0` value. Doing this will override the `calibrate()` method to do nothing, so there would be no need to call it under these conditions.
 
 ## References
 
